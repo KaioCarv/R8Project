@@ -1,0 +1,163 @@
+
+.rankings-page {
+  max-width: 1100px;
+  margin: 16px auto 32px;
+  padding: 0 24px 24px;
+}
+
+.rankings-page-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.rankings-section {
+  margin-bottom: 22px;
+}
+
+.rankings-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  background: #f9fafb;
+  padding: 16px 18px 10px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.rankings-title--small {
+  font-size: 24px;
+  padding-top: 12px;
+}
+
+
+.rankings-divider {
+  border: none;
+  border-top: 1px solid #111827;
+  margin: 0 0 14px;
+}
+
+
+
+.rankings-carousel {
+  position: relative;
+  background: #f9fafb;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Linhas de posters */
+.rankings-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;              
+  padding: 14px 40px 10px;       
+  scrollbar-width: none;       
+}
+
+.rankings-row::-webkit-scrollbar {
+  display: none;               
+}
+
+.rankings-row--small {
+  padding: 10px 8px 10px;
+  background: #f9fafb;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+
+.rankings-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 64px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(15, 23, 42, 0.8);
+  color: #f9fafb;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.rankings-arrow--left {
+  left: 6px;
+}
+
+.rankings-arrow--right {
+  right: 6px;
+}
+
+.rankings-arrow:hover {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+
+.poster-card {
+  flex: 0 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.poster-card--large {
+  width: 180px;
+  height: 260px;
+  border-radius: 24px;
+}
+
+/* Tamanho pequeno (Top 10) */
+.poster-card--small {
+  width: 110px;
+  height: 170px;
+  border-radius: 22px;
+}
+
+
+.poster-card--p1  { background-image: linear-gradient(135deg, #111827, #ef4444); }
+.poster-card--p2  { background-image: linear-gradient(135deg, #1f2937, #4b5563); }
+.poster-card--p3  { background-image: linear-gradient(135deg, #0f172a, #16a34a); }
+.poster-card--p4  { background-image: linear-gradient(135deg, #78350f, #facc15); }
+.poster-card--p5  { background-image: linear-gradient(135deg, #1f2937, #38bdf8); }
+.poster-card--p6  { background-image: linear-gradient(135deg, #111827, #a855f7); }
+
+
+.poster-card--t1  { background-image: linear-gradient(135deg, #0f172a, #22c55e); }
+.poster-card--t2  { background-image: linear-gradient(135deg, #111827, #fb923c); }
+.poster-card--t3  { background-image: linear-gradient(135deg, #1d4ed8, #22c55e); }
+.poster-card--t4  { background-image: linear-gradient(135deg, #0369a1, #f97316); }
+.poster-card--t5  { background-image: linear-gradient(135deg, #a21caf, #facc15); }
+.poster-card--t6  { background-image: linear-gradient(135deg, #15803d, #4ade80); }
+.poster-card--t7  { background-image: linear-gradient(135deg, #7c2d12, #fb7185); }
+.poster-card--t8  { background-image: linear-gradient(135deg, #0f172a, #38bdf8); }
+.poster-card--t9  { background-image: linear-gradient(135deg, #1e293b, #a855f7); }
+.poster-card--t10 { background-image: linear-gradient(135deg, #111827, #f97316); }
+
+@media (max-width: 600px) {
+  .rankings-page {
+    padding: 0 16px 24px;
+  }
+
+  .rankings-title {
+    font-size: 24px;
+  }
+
+  .poster-card--large {
+    width: 150px;
+    height: 220px;
+  }
+
+  .poster-card--small {
+    width: 96px;
+    height: 150px;
+  }
+
+  .rankings-arrow {
+    width: 28px;
+    height: 52px;
+    font-size: 18px;
+  }
+}
