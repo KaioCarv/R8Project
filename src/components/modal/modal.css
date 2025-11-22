@@ -1,0 +1,112 @@
+
+.c-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+}
+
+.c-modal.is-open {
+  display: flex;
+}
+
+.c-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: saturate(140%) blur(2px);
+}
+
+.c-modal__card {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 520px);
+  background: #0f172a;
+  color: #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+
+.c-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.c-modal__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.c-modal__close {
+  background: transparent;
+  border: 0;
+  color: #94a3b8;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.c-modal__close:hover {
+  color: #e2e8f0;
+}
+
+.c-modal__body {
+  padding: 16px 18px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #e2e8f0;
+}
+
+.c-modal__footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 14px 18px;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.btn {
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.btn--ghost:hover {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.btn--danger {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn--danger:hover {
+  filter: brightness(0.95);
+}
+
+.btn--primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  filter: brightness(0.95);
+}

@@ -1,0 +1,7 @@
+# Segredos
+.env
+.env.*
+
+# PHP / Composer
+/vendor/
+composer.phar
