@@ -20,7 +20,7 @@ Resultados Obtidos: Os resultados dos testes que foram realizados foram obtidos 
   - Vazão média: 281,24 req/s  
   - Concorrência: 500   
 
-![Gráfico:](load-tests/graficos/grafico_latencia.png)
+![Gráfico:](graficos/grafico_latencia.png)
 
 **Potenciais Gargalos do Sistema:**
 | Sintoma  | Hipótese levantada |
@@ -51,7 +51,7 @@ Resultados Obtidos: Os resultados dos testes que foram realizados foram obtidos 
   - Vazão média: 254,92 req/s 
   - Concorrência: 500  
 
-![Gráfico:](load-tests/graficos/grafico_vazao.png)
+![Gráfico:](graficos/grafico_vazao.png)
 
 **Potenciais Gargalos do Sistema:**
 | Sintoma  | Hipótese levantada |
